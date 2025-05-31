@@ -13,7 +13,7 @@
 
 ### 주요 기술 요소 요약
 
-| 기술 | 설명 | 링크 |
+| 기술 | 설명 | 레포지터리 |
 |------|------|------|
 | **Zero-Shot Voice Cloning TTS** | 보호자의 예시 음성과 텍스트를 기반으로, 임의의 텍스트에 대해 유사한 음성을 생성 | [🔗 CosyVoice (TTS)](https://github.com/sogang-capzzang/CosyVoice) |
 | **Rule-Based LipSync Video** | 보호자 사진과 음성을 이용해 입 모양이 자연스럽게 동기화된 영상을 생성 | [🔗 LipSync Module](https://github.com/sogang-capzzang/Real3DPortrait) |
@@ -25,7 +25,7 @@
 ![파이프라인 아키텍처](./overall_architecture.png) 
 
 본 시스템은 다솜K 로봇의 정서적 친숙함을 높이기 위해 두 가지 주요 모듈로 구성됩니다..
-첫 번째는 Voice Cloning TTS 모듈로, reference 보호자 음성과 해당 문장, 그리고 GPT Output(Gemini 등의 LLM 결과 텍스트)을 입력받아 보호자의 목소리로 음성을 생성합니다. 생성된 음성은 실시간 TTS 말벗 기능을 통해 다솜K 로봇에 스트리밍됩니다..
+첫 번째는 Voice Cloning TTS 모듈로, 보호자의 reference 음성과 해당하는 문장, 그리고 전달할 문장에 해당하는 GPT Output(Gemini 등의 LLM 결과 텍스트)을 입력으로 받아 보호자의 목소리와 유사한 음성을 생성합니다. 생성된 음성은 실시간 TTS 말벗 기능을 통해 다솜K 로봇에 스트리밍됩니다.
 
 두 번째는 LipSync 모듈로, Voice Cloning TTS 모듈에서 생성된 음성과 reference 보호자 사진을 입력받아 입 모양이 일치하는 Rule-Based LipSync Video를 생성합니다. 이 영상은 상황(식사, 복약 등)에 따라 다솜K 로봇에 재생됩니다. 생성된 영상은 SyncNet 기반의 품질 평가 모듈을 통해 음성과 입 모양의 동기화 여부를 검증할 수 있습니다.
 
