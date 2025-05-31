@@ -1,7 +1,17 @@
-# 치매 돌봄 로봇의 사용자 친밀도를 위한 AI companion
+# 🤖 치매 돌봄 로봇의 사용자 친밀도를 위한 AI Companion
 
-![프로젝트 이미지](./companion.png) 
+<div align="center">
+  <h2>🌿 WSL: <em>Wonderful Silver Life</em></h2>
+  <p><strong>고령층의 삶에 정서적 연결을 제공하는 AI Companion</strong></p>
+</div>
 
+<br/>
+
+<p align="center">
+  <img src="./companion.png" alt="프로젝트 이미지" width="60%"/>
+</p>
+
+---
 ## 🔍 프로젝트 소개
 ### 프로젝트 개요 및 배경
 
